@@ -277,6 +277,14 @@ namespace CameraPlus
 				Plugin.Instance.Config.thirdPerson = ThirdPerson;
 				Plugin.Instance.Config.Save();
 			}
+			else if (Input.GetKeyDown(KeyCode.F2))
+			{
+				if (ThirdPerson)
+				{
+					Plugin.Instance.Config.angx = -Plugin.Instance.Config.angx;
+					Plugin.Instance.Config.Save();
+				}
+			}
 		}
 	}
 }
